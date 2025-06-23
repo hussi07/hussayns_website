@@ -1,0 +1,155 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.right-text {
+  text-align: right;
+  direction: rtl;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  line-height: 2;
+}
+
+
+header.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: white;
+}
+
+header.intro img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 25px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+section {
+  padding: 50px 25px;
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+img {
+  width: 180px;
+  height: auto;
+  max-width: 90%;
+  border-radius: 10px;
+  display: block;
+  margin: 15px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+video {
+  width: 300px;
+  height: auto;
+  max-width: 90%;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.small-img {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+  display: block;
+  max-width: 20%;
+}
+
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.gallery-grid img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header.intro img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img, video {
+    width: 90%;
+  }
+}
+
